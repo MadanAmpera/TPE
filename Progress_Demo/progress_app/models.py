@@ -18,6 +18,7 @@ class progress(models.Model):
     type_homework = models.BooleanField()
     comments = models.CharField(max_length=200)
     hwd = models.IntegerField(default=0)
+    teacher_id = models.IntegerField(default=0)
 
 class location(models.Model):
     location_name = models.CharField(max_length=200)

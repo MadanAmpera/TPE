@@ -1,0 +1,10 @@
+<h1>Students</h1>
+{% if students_list %}
+<ul>
+    {% for students in students_list%}
+    <li><a href="{% url 'progress_app:progress_view' students.id %}">{{students.student_name}}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No students are available.</p>
+{% endif %}
