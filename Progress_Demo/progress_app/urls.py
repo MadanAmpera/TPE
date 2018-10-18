@@ -5,6 +5,12 @@ from . import views
 
 app_name = 'progress_app'
 urlpatterns = [
-    path('', views.students_show, name='students_show'),
-    path('<int:student_id>/', views.progress_view, name='progress_view'),
+    #index
+    path('', views.index, name='index'),
+    #login
+    path('login/', views.login, name='login'),
+    #Admin dashboard
+    path('admin/', views.adminBoard, name='admin'),
+    #Student registration
+    path('studentreg/', views.studentReg, name='studentreg'),
 ]
